@@ -51,15 +51,14 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
 
     // When using the BoM, don't specify versions in Firebase dependencies
-    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-analytics-ktx")
 
     //Firebase Authentication//
-//    implementation("com.google.firebase:firebase-auth-ktx:22.2.0")
-    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-auth-ktx:22.2.0")
 
     //Coroutines support for firebase operations //
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
-
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0")
     //Lifecycle-aware coroutine scopes//
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 

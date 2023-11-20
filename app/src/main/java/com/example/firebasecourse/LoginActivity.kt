@@ -128,6 +128,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.d("LifeCycleAware", "onStart")
+
         val currentUser = mAuth.currentUser
         if(currentUser !=null){
             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
